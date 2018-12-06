@@ -1,12 +1,16 @@
 lapis = require "lapis"
 
-import Widget from require "lapis.html"
+FirstForm = require("views.firstform")
 
 class extends lapis.Application
-  layout: require "views.layout"
+  @enable "etlua"
+
+  layout: "layout"
 
   [index: "/"]: =>
     -- @page_title: "TFT Webshop"
-    -- widget\include_helper @
-    render: true
+    render: "firstform"
   
+  [next: "/next"]: =>
+    print @params
+    render: "firstform"
