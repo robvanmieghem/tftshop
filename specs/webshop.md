@@ -32,6 +32,8 @@ Using the electrum commandline this can be done as follows:
 ```
 electrum restore xpub...............................................
 ```
+> Make sure we don't use the same address twice at any point
+
 Task: Make this available in the jumpscale btc_electrum client 
 
  ## references 
