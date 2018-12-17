@@ -36,6 +36,15 @@ electrum restore xpub...............................................
 
 Task: Make this available in the jumpscale btc_electrum client 
 
+## Services
+
+### 1. Webshop frontend webservice 
+Serves the webpage, generates unique bitcoin adresses for proposed transactions and stores them together with the amount and the  tft target address  in a.  
+
+### 2. TFT payment service
+Uses the stored proposed transactions, monitors the bitcoin chain for payments and transfers the tft to the target adresses. 
+
+
  ## references 
  - [BIP-70](https://github.com/bitcoin/bips/blob/master/bip-0070.mediawiki)
  - [Electrum](https://electrum.org/)
